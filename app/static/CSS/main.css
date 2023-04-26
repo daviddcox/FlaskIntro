@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+}
+.profile-image {
+  background: lightgreen;
+  border-radius: 12px;
+  padding: 3%;
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  font-size: 25px;
+  color: green;
+  text-decoration: none;
+}
+a:hover {
+  font-size: 25px;
+  color: black;
+  text-decoration: underline;
+}
+.container{
+  margin: 0px;
+  padding-bottom: 10%;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container-links{
+  margin: 0px;
+  position: fixed;
+  background: lightblue;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.box{
+  background: lightgreen;
+  border-radius: 12px;
+  height: auto;
+  width: auto;
+}
+.item{
+  height: auto;
+  max-width: 30%;
+}
+.item-top{
+  margin-top: 5%;
+  height: auto;
+  width: auto;
+}
+.item-links{
+  padding-left: 3%;
+  height: auto;
+  max-width: 30%;
+}
+h1{
+  padding: 10px;
+  font-size: 50px;
+  background: lightgreen;
+  border-radius: 12px;
+}
+h2{
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+.info{
+  padding: 10px;
+  font-size: 20px;
+}
+body{
+  background-image: url("https://i0.heartyhosting.com/skateboarding.transworld.net/wp-content/uploads/2020/03/Shmoofoil_QDB_000161970027.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.item-sources{
+  height: auto;
+  max-width: 80%;
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
+{% for message in messages %}
+  <div class='message'>
+            <h3>{{ message['title'] }}</h3>
+            <p>{{ message['content'] }}</p>
+        </div>
+      {% endfor %}
+    <div class='container'>
+      <div class='item'>
+        <div class='box'>
+          <h2>¿De donde es el?</h2>
+          <p class='info'>&emsp;Mark Gonzales es de South Gate, California y el nació en 1968. Tambien, sus padres son Mexicana. El comenzó patinar cuando el tenía 13 años y cuando tenía 16 años el era en el "cover" de Thrasher Magazine.</p>
+        </div>
+      </div>
+      <div class='item'>
+        <img class='profile-image' src='https://boardridingstorage.blob.core.windows.net/images/resize/Mark-Gonzales-1434.PNG' alt='Standing Mark'>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='item'>
+        <img class='profile-image' scale=1/2 src='https://www.thrashermagazine.com/imagesV2/Magazine/Covers/COVERS_THRASHER/1986/TH8609.jpg' alt='Thrasher_Cover1'>
+      </div>
+      <div class='item'>
+        <div class='box'>
+          <h2>¿Quien es el?</h2>
+          <p class='info'>&emsp;El es el pionero de patinar en los calles. El creó muchos trucos (tricks) nuevos. Tambien, el fue el primero en patinar los pasamanos (handrails). Una cita del "Gonz" es "I think a lot of it has to do with that adrenaline rush, that kick that makes you feel very alive in that exact moment, and you want to do that more". Mark se llama el "most influential skater of all time."</p>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='item'>
+        <div class='box'>
+          <h2>El Arte del “Gonz”</h2>
+          <p class='info'>&emsp;Mark Gonzales convirtió en un artista después de su carrera de patinar. El siempre dibujaría cuando el viajo a lugares en todo el mundo como un patinador profesional. El aprendió de otras patinadores profesionales. El prefiere hacer arte de los calles. Tambien, el arte de Mark fue en un anuncio (ad) de Calvin Klein. Algo del arte de Mark fue quierió de Donald Trump.
+          </p>
+        </div>
+      </div>
+      <div class='item'>
+        <img class='profile-image' src='https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F06%2Fmark-gonzales-street-art-exhibition-chandran-gallery-01.jpg?quality=95&w=1170&cbr=1&q=90&fit=max' alt='Painting Mark'>
+      </div>
+    </div>
+    <form method="post">
+        <label for="title">Title</label>
+        <br>
+        <input type="text" name="title"
+               placeholder="Message title"
+               value="{{ request.form['title'] }}"></input>
+        <br>
+
+        <label for="content">Message Content</label>
+        <br>
+        <textarea name="content"
+                  placeholder="Message content"
+                  rows="15"
+                  cols="60"
+                  >{{ request.form['content'] }}</textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
+</html>
